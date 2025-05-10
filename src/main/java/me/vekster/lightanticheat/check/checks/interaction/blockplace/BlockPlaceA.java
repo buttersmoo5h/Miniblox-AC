@@ -55,7 +55,7 @@ public class BlockPlaceA extends InteractionCheck implements Listener {
         buffer.put("lastFlag", currentTime);
 
         buffer.put("flags", buffer.getInt("flags") + 1);
-        if (buffer.getInt("flags") <= 1)
+        if (buffer.getInt("flags") <= 10)
             return;
 
         Player player = event.getPlayer();

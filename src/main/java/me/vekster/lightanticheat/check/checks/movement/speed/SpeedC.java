@@ -171,7 +171,7 @@ public class SpeedC extends MovementCheck implements Listener {
 
             if (AccuracyUtil.isViolationCancel(getCheckSetting(), buffer))
                 return;
-            callViolationEventIfRepeat(player, lacPlayer, event, buffer, 5000);
+            callViolationEventIfRepeat(player, lacPlayer, event, buffer, 15000);
         });
     }
 
